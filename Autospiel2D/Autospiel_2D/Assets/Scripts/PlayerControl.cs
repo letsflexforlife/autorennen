@@ -6,7 +6,7 @@ public class PlayerControl : MonoBehaviour
     Rigidbody2D rb;
 
     public float speed = 5f;
-    public float rotationSpeed = 150f;
+    public float rotationSpeed = 300f;
 
     void Start()
     {
