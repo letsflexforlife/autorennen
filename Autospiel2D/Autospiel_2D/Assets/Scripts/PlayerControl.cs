@@ -7,7 +7,7 @@ public class PlayerControl : MonoBehaviour
 
     public float speed = 5f;
     public float rotationSpeed = 300f;
-    public float turn_correc_movement = 300f;
+    public float turn_correc_movement = 10f;
 
     void Start()
     {
@@ -30,7 +30,7 @@ public class PlayerControl : MonoBehaviour
         rb.linearVelocity = transform.up * move * speed;
         if (Keyboard.current.wKey.isPressed || Keyboard.current.sKey.isPressed)
         {
-            rb.MoveRotation((rb.rotation + turn * rotationSpeed * Time.deltaTime *turn_correc_movement)/(move*speed));    
+            rb.MoveRotation(rb.rotation + (turn * rotationSpeed * Time.deltaTime *turn_correc_movement)/(move*speed));    
         }
         
     }
