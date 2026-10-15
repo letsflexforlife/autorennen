@@ -8,10 +8,10 @@ public class PlayerControl : MonoBehaviour
 
     public float speed = 30f;
     public float rotationSpeed = 1000f;
-    public float turn_correc_movement = 10f;
-    public float acceleration_val = 10f;
+    public float turn_correc_movement = 40f;
+    public float acceleration_val = 4f;
     public float resistance = 0.99f;
-    public float max_rotate_speed = 300f;
+    public float max_rotate_speed = 10f;
 
 
     private float move = 0f;
